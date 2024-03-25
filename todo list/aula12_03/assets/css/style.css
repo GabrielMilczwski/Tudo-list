@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root{
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color:var(--color-dark3);
+    color: white;
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#adicionaTarefaNaLista,
+#ocultarTarefa {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+    display: flex;
+}
+
+#adicionaTarefaNaLista{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+#adicionaTarefaNaLista:hover{
+    background-color: maroon;
+}
+
+#ocultarTarefa{
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 40%;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#ocultarTarefa:hover{
+    background-color: maroon;
+}
+
+main{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    background-color: red;
+    
+}

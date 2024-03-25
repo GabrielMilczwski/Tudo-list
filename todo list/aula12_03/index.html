@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Todo List Gabriel</title>
+</head>
+<body>
+    
+    <h2>Lista de Tarefas - Programação FrontEnd</h2>
+
+    <div id="div_area_nova_tarefa">
+        <label for="input_nova_tarefa">Digite sua nova tarefa:</label>
+        <input type="text" id="input_nova_tarefa">
+        <button onclick="adicionaTarefaNaLista()" id="adicionaTarefaNaLista">+</button>
+        <button onclick="ocultarTarefa()" id="ocultarTarefa">ocultarTarefa</button>
+    </div>
+<main>
+    <div id="div_lista_de_tarefas">
+        <ul id="lista_de_tarefas"> 
+        </ul>
+    </div>    
+</main>
+    
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
