@@ -46,14 +46,6 @@ function mudaEstadoTarefa(idTarefa) {
     }     
 }
 
-function ocultarTarefa(){
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(function(checkbox) {
-        if (checkbox.checked) {
-            checkbox.parentNode.style.display = 'none';
-        }
-    });
-  }
 
   function habilitaEdicao(itemLista) {
     const textoItem = itemLista.firstChild;
@@ -78,4 +70,28 @@ function adicionaTarefaNaLista() {
         criaNovoItemDaLista(novaTarefa);
         document.getElementById('input_nova_tarefa').value = ''; 
     }
+}
+
+function ocultarTarefa() {
+    // Seleciona todos os checkboxes no documento
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    // Itera sobre cada checkbox
+    checkboxes.forEach(function(checkbox) {
+        // Verifica se o checkbox está marcado
+        if (checkbox.checked) {
+                checkbox.parentNode.style.display = 'none';
+        }
+    });
+}
+
+function desocultarTarefas(){
+    // Seleciona todos os checkboxes no documento
+    const desocultarboxes = document.querySelectorAll('input[type="checkbox"]');
+    // Itera sobre cada checkbox
+    desocultarboxes.forEach(function(desocultarboxes) {
+        // Verifica se o checkbox está marcado
+        if (desocultarboxes.checked) {
+            desocultarboxes.parentNode.style.display = 'list-item';
+        }
+    });
 }
