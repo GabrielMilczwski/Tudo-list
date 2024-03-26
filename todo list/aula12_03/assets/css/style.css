@@ -1,27 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-:root{
-    --color-dark: rgb(14, 14, 14);
-    --color-dark2: rgb(32, 32, 32);
-    --color-dark3: rgb(22, 22, 22);
-    --color-white: #fff;
-    --color-green: rgb(103, 195, 80);
-    --color-green2: rgb(51, 149, 26);
-    --color-red: rgb(184, 40, 35);
-    --color-red2: rgb(146, 22, 17);
-}
+
 
 body{
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
-    background-color:var(--color-dark3);
+    background-color:rgb(76, 76, 77);
     color: white;
+    
     
 }
 
@@ -36,6 +27,7 @@ body{
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
+    
 }
 
 #adicionaTarefaNaLista,
@@ -48,13 +40,19 @@ body{
 }
 
 #adicionaTarefaNaLista{
-    background-color: var(--color-dark2);
-    color: var(--color-white);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: .4s;
+    display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+  margin-top: 10px;
 
 }
 
@@ -63,16 +61,43 @@ body{
 }
 
 #ocultarTarefa{
-    background-color: var(--color-dark2);
-    color: var(--color-white);
-    border-radius: 40%;
-    width: 120px;
-    height: 50px;
-    cursor: pointer;
-    transition: .4s;
+    display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+  vertical-align: middle;
 }
 
 #ocultarTarefa:hover{
+    background-color: maroon;
+}
+
+#desocultarTarefas{
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+  display: flex;
+  vertical-align: middle;
+}
+
+#desocultarTarefas:hover{
     background-color: maroon;
 }
 
@@ -85,7 +110,52 @@ main{
     justify-content: space-between;
 }
 
+#input_nova_tarefa{
+    display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+}
+
 label {
-    background-color: red;
+    display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+  vertical-align: middle;
     
 }
+
+#idTarefa{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: rgb(45, 44, 44);
+    vertical-align: middle;
+}
+
+
