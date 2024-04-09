@@ -95,3 +95,19 @@ function desocultarTarefas(){
         }
     });
 }
+// Função para salvar a lista no localStorage
+function salvaListaNoLocalStorage() {
+    const listaTarefas = document.getElementById('lista_de_tarefas').innerHTML;
+    localStorage.setItem('lista_tarefas', listaTarefas);
+}
+
+// Função para carregar a lista do localStorage ao carregar a página
+function carregaListaDoLocalStorage() {
+    const listaSalva = localStorage.getItem('lista_tarefas');
+    if (listaSalva) {
+        document.getElementById('lista_de_tarefas').innerHTML = listaSalva;
+    }
+}
+
+// Ao carregar a página, carrega a lista do localStorage
+window.onload = carregaListaDoLocalStorage;
