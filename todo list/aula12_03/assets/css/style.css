@@ -12,42 +12,9 @@ body{
     gap: 4rem;
     background-color:rgb(76, 76, 77);
     color: white;
-    overflow-x: hidden;
-
     
     
 }
-
-h2{
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgb(45, 44, 44);
-    vertical-align: middle;
-    font-size: larger; 
-}
-
-hr {
-    display: inline-block;
-  padding: .1rem 1.25rem;
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background-color: rgb(0, 0, 0);
-  margin-top: 10px;
-  border-style: none;
-}
-
-
 
 .content{
     display: flex;
@@ -73,7 +40,7 @@ hr {
 }
 
 #adicionaTarefaNaLista{
-  display: inline-block;
+    display: inline-block;
   padding: .75rem 1.25rem;
   border-radius: 10rem;
   color: #ffffff;
@@ -86,9 +53,7 @@ hr {
   z-index: 1;
   background-color: rgb(45, 44, 44);
   margin-top: 10px;
-  cursor: pointer;
-  letter-spacing: 1px;
-  
+
 }
 
 #adicionaTarefaNaLista:hover{
@@ -101,7 +66,7 @@ hr {
   border-radius: 10rem;
   color: #ffffff;
   text-transform: uppercase;
-  
+  font-size: 1rem;
   letter-spacing: .15rem;
   transition: all .3s;
   position: relative;
@@ -109,8 +74,6 @@ hr {
   z-index: 1;
   background-color: rgb(45, 44, 44);
   vertical-align: middle;
-  cursor: pointer;
-  
 }
 
 #ocultarTarefa:hover{
@@ -118,19 +81,20 @@ hr {
 }
 
 #desocultarTarefas{
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgb(45, 44, 44);
-    vertical-align: middle;
-    cursor: pointer;
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: rgb(45, 44, 44);
+  display: flex;
+  vertical-align: middle;
 }
 
 #desocultarTarefas:hover{
@@ -175,23 +139,9 @@ label {
   z-index: 1;
   background-color: rgb(45, 44, 44);
   vertical-align: middle;
-    
+
 }
 
-#idTarefa{
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    background-color: rgb(45, 44, 44);
-    vertical-align: middle;
-}
+
 
 
