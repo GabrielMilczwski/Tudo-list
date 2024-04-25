@@ -3,6 +3,7 @@ function validaSeExisteTarefasNoLocalStorageEMostraNaTela() {
     if (localStorage.getItem('lista_tarefas') != null) {
         const listaTarefas = JSON.parse(localStorage.getItem('lista_tarefas'))
         listaTarefas.forEach(tarefa => {
+            const novoItem = document.createElement('li')
             
             criaNovoItemDaLista(textoDaTarefa)
             
