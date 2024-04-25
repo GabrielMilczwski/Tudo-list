@@ -3,10 +3,12 @@ function validaSeExisteTarefasNoLocalStorageEMostraNaTela() {
     if (localStorage.getItem('lista_tarefas') != null) {
         const listaTarefas = JSON.parse(localStorage.getItem('lista_tarefas'))
         listaTarefas.forEach(tarefa => {
+            const listaTarefas = document.getElementById('lista_de_tarefas')
             const novoItem = document.createElement('li')
-            
-            criaNovoItemDaLista(textoDaTarefa)
-            
+            novoItem.innerText = tarefa.descricao
+            novoItem.id = tarefa.id
+            novoItem.setAttribute('data-status', tarefa.status);
+            novoItem.appendChild(criaInputCheckBoxTarefa(novoItem.id, tarefa.status))
             if (tarefa.status === 'fechada') {
                novoItem.style.textDecoration =  'line-through'    
             }
@@ -16,15 +18,11 @@ function validaSeExisteTarefasNoLocalStorageEMostraNaTela() {
 }
 
 function criaNovoItemDaLista(textoDaTarefa) {
-    let qtdTarefas = listaTarefas.children.lengt
-    
-        const listaTarefas = document.getElementById('lista_de_tarefas')
-            const novoItem = document.createElement('li')
-            novoItem.innerText = tarefa.descricao
-            novoItem.id = tarefa.id
-            novoItem.setAttribute('data-status', tarefa.status);
-            novoItem.appendChild(criaInputCheckBoxTarefa(novoItem.id, tarefa.status))
-    
+    const listaTarefas = document.getElementById('lista_de_tarefas')
+    let qtdTarefas = listaTarefas.children.length
+
+    const novoItem = document.createElement('li')
+
     novoItem.innerText = textoDaTarefa
     novoItem.id = `tarefa_id_${qtdTarefas}`
 
